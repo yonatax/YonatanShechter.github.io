@@ -80,17 +80,18 @@
   margin-top: 28px;
   justify-content: center;
   flex-wrap: nowrap;       /* prevents wrapping */
-  overflow-x: auto;        /* allows horizontal scrolling if needed */
+  overflow-x: hidden;        /* allows horizontal scrolling if needed */
   padding-bottom: 10px;    /* some space for scrollbar */
 }
 
 .card {
-  flex: 0 0 280px;         /* fixed width so all cards align in row */
+  flex: 1 1 220px;         /* fixed width so all cards align in row */
   background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
   border: 1px solid rgba(255,255,255,.08);
   border-radius: var(--radius);
   padding: 24px 20px 22px;
-  min-height: 200px;
+  min-height: 220px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -141,9 +142,14 @@
         <h1>Yonatan Shechter</h1>
         <p>B.Sc. in Mathematics with a Minor in Computer Science — Emphasis on Rigor and Clean Code.</p>
         <div class="links">
-          <a class="pill" href="https://github.com/YonatanShechter" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="pill" href="https://github.com/yonatax" target="_blank" rel="noreferrer">GitHub</a>
           <a class="pill" href="mailto:Yonatan.shechter@gmail.com">Email</a>
-          <a class="pill" href="www.linkedin.com/in/yonatan-shechter" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="pill"
+          href="https://www.linkedin.com/in/yonatan-shechter/"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+          </a>
           <a class="pill" href="https://leetcode.com/u/yonatan8/" target="_blank" rel="noreferrer">LeetCode</a>
         </div>
       </div>
